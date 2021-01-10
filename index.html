@@ -15,7 +15,7 @@
     <header class="titleBand" id="titleBar">
         <h1 class="title">Developer Quizz</h1>
         <div class ="timerAndBtn">
-        <button class ="btn">View High Scores</button>
+        <button class ="btn" id="viewHighScores">View High Scores</button>
         <div class = "timer" id="timeKeeper">
             <h4>Time: </h4>
         </div>
@@ -38,10 +38,10 @@
         <div class="questionsContainer" id="quesContainer">
             <div id="questions" class = "questionFormat">"Questions"</div>
             <div id="answer-button" class="btn-grid">
-            <button class ="btn", id="ans1">Answer A</button>
-            <button class ="btn", id="ans2">Answer B</button>
-            <button class ="btn", id="ans3">Answer C</button>
-            <button class ="btn", id="ans4">Answer D</button>
+            <button class ="btn", id="ans1", onclick="correctAnswer('ans1')">Answer A</button>
+            <button class ="btn", id="ans2", onclick="correctAnswer('ans2')">Answer B</button>
+            <button class ="btn", id="ans3", onclick="correctAnswer('ans3')">Answer C</button>
+            <button class ="btn", id="ans4", onclick="correctAnswer('ans4')">Answer D</button>
             </div>
             <div id="correctAnswer" class = correctAnsFormat>"Answer is"</div>
         </div>
