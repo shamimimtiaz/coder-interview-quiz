@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>developerInterviewQuiz</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <!--title bar with title, timer for the quizz and high scores button-->
+    <header class="titleBand" id="titleBar">
+        <h1 class="title">Developer Quizz</h1>
+        <div class ="timerAndBtn">
+        <button class ="btn">View High Scores</button>
+        <div class = "timer" id="timeKeeper">
+            <h4>Time: </h4>
+        </div>
+        </div>
+    </header>
+
+    <!--Main body with instructions and questions-->
+    <main>
+        <!--Instructions and the first screen shown -->
+        <div class="instructions" id="instruction"> 
+            <h2>Instructions</h2>
+            <li>Multiple choice questions will be asked</li>
+            <li>Total time to answer is 2mins</li>
+            <li>Each wrong answer will deduct 10 seconds of time</li>
+            <li>Total score will be given at the end</li>
+            <li>Player will be given the option to log their scores against others</li>
+            <h4>GOOD LUCK</h4>
+        </div>
+        <!--Questions container-->
+        <div class="questionsContainer" id="quesContainer">
+            <div id="questions" class = "questionFormat">"Questions"</div>
+            <div id="answer-button" class="btn-grid">
+            <button class ="btn", id="ans1">Answer A</button>
+            <button class ="btn", id="ans2">Answer B</button>
+            <button class ="btn", id="ans3">Answer C</button>
+            <button class ="btn", id="ans4">Answer D</button>
+            </div>
+            <div id="correctAnswer" class = correctAnsFormat>"Answer is"</div>
+        </div>
+
+        <!--Navigation buttons-->
+        <div class="navigations">
+            <button id="start-btn" class ="start-btn btn">START</button>
+            <button id="next-btn" class ="next-btn btn hide">NEXT</button>
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
