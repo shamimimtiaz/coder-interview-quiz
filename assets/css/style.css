@@ -22,7 +22,7 @@ color:var(--secondary);
     margin: 0;
 }
 
-.instructions,.questionsContainer {
+.instructions,.questionsContainer, .CurrentHScore {
 widows: 800px;
 max-width:80%;
 justify-content: center;
@@ -38,7 +38,7 @@ box-shadow: 0 0 10px 3px;
     margin: 20px 0;
 }
 
-.btn{
+.btn, .submitBtn{
     border:1px solid;
     background-color: var(--secondary);
     border-radius: 5px;
@@ -70,7 +70,7 @@ box-shadow: 0 0 10px 3px;
   
     
 }
-.questionsContainer{
+.questionsContainer, .currentHScore{
     visibility: hidden;
 }
 
