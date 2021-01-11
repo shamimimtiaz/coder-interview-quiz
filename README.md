@@ -7,6 +7,9 @@ Script.js
 Index.html
 Style.css
 
+Web Link:  https://shamimimtiaz.github.io/coder-interview-quiz
+GitHub Link:https://github.com/shamimimtiaz/coder-interview-quiz.git
+
 Completed Work(MVP1):
 Screen 1: 
 Shows the user the instructions and the start button to start the quizz. 
