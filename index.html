@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>developerInterviewQuiz</title>
+  <title>coderInterviewQuiz</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script defer src="./assets/js/script.js"></script>
 </head>
 
+
 <body>
-    <!--title bar with title, timer for the quizz and high scores button-->
-    <header class="titleBand" id="titleBar">
-        <h1 class="title">Developer Quizz</h1>
-        <div class ="timerAndBtn">
-        <button class ="btn" id="viewHighScores">View High Scores</button>
-        <div class = "timer" id="timeKeeper">
-            <h4>Time: </h4>
+
+<!--Introductory page - instructions and the first screen shown -->-->
+<div class = "first" id="firstPage">
+    <div class="topPic"></div>
+    <h1> Coding Quiz Challenge </h1>
+    <p> Instructions </br> Multiple choice questions will be asked </br> Total score will be given at the end </br> Player will be given the option to log their scores against others </p>
+    <h4>Good Luck</h4>
+    <button class="btn" id="startButton"> Start Button </button>
+</div>
+
+  <!--Questions container-->
+<div id="mainPage" class="mainPageFormat">
+    <div id="timer"> Time(in seconds): </div>
+    <div id="questions"> Questions </div>
+    <button class="btn" id="a" onClick= "correctAnswer ('a')"> A </button>
+    <button class="btn" id="b" onClick= "correctAnswer ('b')"> B </button>
+    <button class="btn" id="c" onClick= "correctAnswer ('c')"> C </button>
+    <button class="btn" id="d" onClick= "correctAnswer ('d')"> D </button>
+    <div id="result"></div>
+</div>
+<div id="quizComplete", class="quizzCompleteFormat">
+    
+    <div id="finalScore"></div>
+    <input type="text" size="25" placeHolder="Enter Initials" id="initials" name="initial">
+    <button class="btn" id="submitScore"> Submit </button>
+</div>
+    <!--final score container after the quizz is complete-->
+<div id="scoreContainer" class="scoreFormat">
+    <div id="scorePage">
+        <div id="scoreHeader">
+            <h3> Initials </h3>
+            <h3> Score </h3>
         </div>
-        </div>
-    </header>
-
-    <!--Main body with instructions and questions-->
-    <main>
-        <div class="navigations">
-            <button id="start-btn" class ="start-btn btn">START</button>
-            <button id="next-btn" class ="next-btn btn hide">NEXT</button>
-        </div>
-        <!--Instructions and the first screen shown -->
-        <div class="instructions" id="instruction"> 
-            <h2>Instructions</h2>
-            <li>Multiple choice questions will be asked</li>
-            <li>Total time to answer is 2mins</li>
-            <li>Each wrong answer will deduct 10 seconds of time</li>
-            <li>Total score will be given at the end</li>
-            <li>Player will be given the option to log their scores against others</li>
-            <h4>GOOD LUCK</h4>
-        </div>
-        <!--Questions container-->
-        <div class="questionsContainer" id="quesContainer">
-            <div id="questions" class = "questionFormat">"Questions"</div>
-            <div id="answer-button" class="btn-grid">
-            <button class ="btn", id="ans1", onclick="correctAnswer('ans1')">Answer A</button>
-            <button class ="btn", id="ans2", onclick="correctAnswer('ans2')">Answer B</button>
-            <button class ="btn", id="ans3", onclick="correctAnswer('ans3')">Answer C</button>
-            <button class ="btn", id="ans4", onclick="correctAnswer('ans4')">Answer D</button>
-            </div>
-            <div id="correctAnswer" class = correctAnsFormat>"Answer is"</div>
-        </div>
-        <div class="currentHScore" id="currentHighScore">
-            <h2>All Done!</h2>
-            <p id="finalScore">Your Final Score is</p>
-            <input type = text, name="initial" placeholder="Enter your Initial here" />
-            <button class = "submitBtn" id="initialSubmit">SUBMIT</button>
-            </div>
-
-        <!--Navigation buttons-->
-        
-    </main>
+        <div id= "score-initials"></div>
+        <div id= "score-score"></div>
+    </div>
 
 
+<div id="endBtns" class="navigationBtn">
+    <button class="btn" id="restart" onClick= "restart()"> Restart The Quiz</button>
+    <button class="btn" id="clearScore" onClick="clearScore()"> Clear Scores </button>
+</div>
 
-
-
+<script src="assets/js/script.js"></script>
 
 </body>
+
+</html>
